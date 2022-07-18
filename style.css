@@ -91,6 +91,26 @@ ul {
     cursor: pointer;
 }
 
+#cart-icon::after{
+    content: attr(data-count);
+    position: absolute;
+    padding-left: 1px;
+    top: -2px;
+    right: -2px;
+    width: 18px;
+    height: 18px;
+    font-weight: 600;
+    background: var(--light-color);
+    color: var(--dark-color);
+    font-size: 1rem;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+#cart-icon.zero::after{
+    opacity: 1;
+} 
+
 .cart{
     position: fixed;
     top: 0;
