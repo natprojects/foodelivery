@@ -174,3 +174,16 @@ function updateTotal() {
         document.getElementsByClassName('total-price')[0].innerText = '$' + total;
     
 }
+
+
+
+// icon
+let addsCart = document.getElementsByClassName('add-cart')
+for(but of addsCart)
+{
+    but.addEventListener('click', (e) =>{
+        let add = Number(cartIcon.getAttribute('data-count') || 0);
+        cartIcon.setAttribute('data-count', add + 1);
+        cartIcon.classList.add('zero')
+    })
+}
