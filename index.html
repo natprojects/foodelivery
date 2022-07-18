@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                Food
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link hide">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#menu" class="nav__link hide">Menu</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#service" class="nav__link hide">Service</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link"><i class='bx bx-cart' id="cart-icon"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+
+                
+                <div class="cart-content"></div>
+                 
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+
+                    <button type="button" class="buy-btn">Buy Now</button>
+
+                    <i class='bx bx-x' id="close-cart"></i>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="home__container container">
+                <div class="home__content">
+                    <div class="home__pack">
+                        <h1 class="home__title">
+                            Your best food delivery
+                        </h1>
+
+                        <p class="home__description">
+                            Find your favorite meal
+                        </p>
+
+                        <button class="home__button">
+                            <a href="#menu" class="home__button-description">Menu</a>
+                        </button>
+                    </div>
+                </div>
+
+                <img src="./img/home.png" alt="" class="home__img">
+            </div>
+        </section>
+
+
+        <section class="menu" id="menu">
+            <div class="menu__container container">
+                <div class="menu__content">
+
+
+                    <div class="menu__titles">
+                        <div class="menu__subtitle">
+                            <p>Food menu</p>
+                        </div>
+
+                        <div class="menu__title">
+                            <h2>Fresh taste and great price</h2>
+                        </div>
+                    </div>
+
+
+                    <div class="menu__cards">
+
+                        <article class="menu__card">
+                                <img src="./img/food1.png" alt="" class="menu__img">
+
+                                <h2 class="menu__price">$5</h2>
+                                <h3 class="menu__name">Chicken Burger</h3>
+        
+                            <i class='bx bx-cart add-cart'></i>
+                        </article>
+
+
+
+                        <article class="menu__card">
+                                <img src="./img/food2.png" alt="" class="menu__img">
+
+
+                                <h2 class="menu__price">$9</h2>
+                                <h3 class="menu__name">Special Beef Burger</h3>
+
+                            <i class='bx bx-cart add-cart'></i>
+
+                        </article>
+
+
+                        <article class="menu__card">
+                                <img src="./img/food3.png" alt="" class="menu__img">
+  
+
+                                <h2 class="menu__price">$4</h2>
+                                <h3 class="menu__name">Chicken Fry Pack</h3>
+
+
+                            <i class='bx bx-cart add-cart'></i>
+                        </article>
+                    </div>
+
+                    <div class="menu__info">
+                        <h3 class="menu__info-description">
+                            Choose your best food.
+                        </h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="service" id="service">
+            <div class="service__container container">
+                <div class="service__content">
+
+
+                    <div class="service__titles">
+                        <div class="service__subtitle">
+                            <p>Services</p>
+                        </div>
+
+                        <div class="service__title">
+                            <h2>We provide best quality food</h2>
+                        </div>
+                    </div>
+
+
+                    <div class="service__cards">
+
+                        <article class="service__card">
+                            <div class="service__imges">
+                                <img src="./img/s1.png" alt="" class="service__img">
+                            </div>
+
+                            <div class="service__data">
+                                <h2 class="service__data-title">Order</h2>
+                                <h3 class="service__data-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                    elit. Ut provident ipsum vero amet et, quia reiciendis. Accusamus!</h3>
+                            </div>
+
+                        </article>
+
+
+
+                        <article class="service__card">
+                            <div class="service__imges">
+                                <img src="./img/s2.png" alt="" class="service__img">
+                            </div>
+
+                            <div class="service__data">
+                                <h2 class="service__data-title">Shipping</h2>
+                                <h3 class="service__data-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Ea veniam, rerum accusamus quibusdam modi vitae quaerat sequi?</h3>
+                            </div>
+
+                        </article>
+
+
+                        <article class="service__card">
+                            <div class="service__imges">
+                                <img src="./img/s3.png" alt="" class="service__img">
+                            </div>
+
+                            <div class="service__data">
+                                <h2 class="service__data-title">Delivered</h2>
+                                <h3 class="service__data-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Maiores, corrupti obcaecati sapiente neque a maxime iste magnam?</h3>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__container container">
+
+            <div class="footer__content">
+                <div class="footer__email">
+                    <div class="footer__data">
+                        <p class="footer__description">
+                            Subscribe to our newsletter
+                        </p>
+
+                        <div class="footer__newsletter">
+                            <input type="email" placeholder="Your email addres" class="footer__input">
+                            <button class="footer__button">
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="footer__data">
+                    <h2 class="footer__subtitle">Address</h2>
+                    <p class="footer__information">
+                        9876 Hacienda Av. <br>
+                        New York, USA
+                    </p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__subtitle">Contact</h2>
+                    <p class="footer__information">
+                        +987654321
+                    </p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__subtitle">Office</h2>
+                    <p class="footer__information">
+                        Monday - Saturday <br>
+                        9AM - 10PM
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="footer__group">
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </ul>
+
+                <span class="footer__copy">
+                    Ohrimmenko. All rigths reserved
+                </span>
+            </div>
+        </div>
+    </footer>
+
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
