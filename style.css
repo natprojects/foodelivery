@@ -102,7 +102,7 @@ ul {
     height: 18px;
     font-weight: 600;
     background: var(--light-color);
-    color: var(--dark-color);
+    color: var(--first-color);
     font-size: 1rem;
     border-radius: 50%;
     opacity: 0;
@@ -568,7 +568,8 @@ cursor: pointer;
 
 .scroll-header .nav__logo:hover,
 .scroll-header #cart-icon:hover,
-.scroll-header .nav__link:hover {
+.scroll-header .nav__link:hover,
+.scroll-header #cart-icon::after:hover{
     color: var(--dark-color);
 }
 
