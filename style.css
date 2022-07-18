@@ -566,10 +566,14 @@ cursor: pointer;
     color: var(--light-color);
 }
 
+.scroll-header #cart-icon::after{
+    color: var(--dark-color);
+}
+
+
 .scroll-header .nav__logo:hover,
 .scroll-header #cart-icon:hover,
-.scroll-header .nav__link:hover,
-.scroll-header #cart-icon::after:hover{
+.scroll-header .nav__link:hover{
     color: var(--dark-color);
 }
 
