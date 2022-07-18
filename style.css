@@ -89,6 +89,7 @@ ul {
     justify-self: center;
     color: var(--first-color);
     cursor: pointer;
+    position: relative;
 }
 
 #cart-icon::after{
